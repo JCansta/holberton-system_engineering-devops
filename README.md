@@ -1,2 +1,2 @@
-# holberton-system_engineering-devops
-This file is for learning more about shell
+# holberton
+This file is for *learning* more about shell
