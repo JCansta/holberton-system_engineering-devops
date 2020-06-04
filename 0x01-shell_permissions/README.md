@@ -9,4 +9,4 @@ script 7: add execute permissions to everybody
 script 8: change permissions to owner and groups dont have any and other users have all
 script 9: change the mode of a file to - rwxr-x-wx
 script 10: make the permissions of a file same as another file
-
+script 11: change permissions of all subdirectories
