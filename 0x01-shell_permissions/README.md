@@ -6,4 +6,5 @@ script 4: create a empty file called hello
 script 5: give a user the permissions to execute the file hello
 script 6: add x permision to the owner and group and r for others
 script 7: add execute permissions to everybody
+script 8: change permissions to owner and groups dont have any and other users have all
 
