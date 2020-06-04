@@ -10,3 +10,5 @@ script 8: change permissions to owner and groups dont have any and other users h
 script 9: change the mode of a file to - rwxr-x-wx
 script 10: make the permissions of a file same as another file
 script 11: change permissions of all subdirectories
+script 12: make a directory with set permissions
+
