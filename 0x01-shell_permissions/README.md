@@ -12,4 +12,5 @@ script 10: make the permissions of a file same as another file
 script 11: change permissions of all subdirectories
 script 12: make a directory with set permissions
 script 13: change group of the file hello
+script 14: cambiar usuario y grupo de todos los archivos
 
