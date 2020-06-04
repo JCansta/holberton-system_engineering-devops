@@ -14,4 +14,4 @@ script 12: make a directory with set permissions
 script 13: change group of the file hello
 script 14: change owner and group of all files
 script 15: change the owner and group of files with symbolic links
-
+script 16: change the owner only if have a especify name
