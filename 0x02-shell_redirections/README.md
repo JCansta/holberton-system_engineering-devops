@@ -9,3 +9,5 @@ SCRIPT 7: create a file with a weird name with smth inside
 SCRIPT 8: write into a file the output of a command
 SCRIPT 9: duplicate last line of a file
 SCRIPT 10: delete all file which finish with .js in the current directory and the subdirectories
+SCRIPT 11: counte the directories in current directory and subdirectories
+SCRIPT 12: displya the 10 newest files in the current directory
