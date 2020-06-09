@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "hello $(id -n -u)"
+printf "hello $(id -n -u)\n"
