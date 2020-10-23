@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #this command display holberton school 10 times
-num=0
+num=1
 num2=10
 until [ $num2 -lt $num ]
 do
