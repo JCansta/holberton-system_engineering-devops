@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#check if a file exist, if is emtpy and if is regular
+file="holbertonschool"
+if [ -e $file ]
+then
+	echo "$file file exists"
+else
+	echo "$file file does not exist"
+	exit 0
+fi
+if [ -s $file ]
+then
+	echo "$file file is not empty"
+else
+	echo "$file file is empty"
+fi
+if [ -f $file ]
+then
+	echo "$file is a regular file"
+fi

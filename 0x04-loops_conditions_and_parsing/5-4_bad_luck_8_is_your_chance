@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#display number from 1 to 10
+num=0
+while [ $num -lt 10 ]
+do
+	if [ $num = 3 ]
+	then
+		echo "bad luck"
+	else
+		if [ $num = 7 ]
+		then
+			echo "good luck"
+		else
+			echo "Holberton School"
+		fi
+	fi
+	num=$((num + 1))
+done

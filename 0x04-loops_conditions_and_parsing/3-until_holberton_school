@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#this command display holberton school 10 times
+num=0
+num2=10
+until [ $num2 -lt $num ]
+do
+	echo "Holberton School"
+	num=$((num + 1))
+done

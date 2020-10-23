@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#1 to 20
+num=1
+while [ $num -lt 21 ]
+do
+	echo "$num"
+	if [ $num = 4 ]
+	then
+		echo "bad luck from China"
+	fi
+	if [ $num = 9 ]
+	then
+		echo "bad luck from Japan"
+	fi
+	if [ $num = 17 ]
+	then
+		echo "bad luck from Italy"
+	fi
+	num=$((num + 1))
+done
