@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#display especific lines of all process
+# shellcheck disable=SC2009
+pgrep -l bash
