@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-#this command display holberton school 10 times
-num=0
-while [ $num -lt 10 ]
-do
-	echo "Holberton School"
-	num=$((num + 1))
-done
+# This script is displaying "Holberton School" 10 times
+num="0"
+while [ $num -lt 10 ];
+do echo "Holberton School"
+	num=$(($num + 1))
+done;
