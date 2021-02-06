@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # This script is displaying "Holberton School" 10 times
-num="0"
-while [ $num -lt 10 ];
+num=0
+while [ $num -lt 10 ]
 do 
 	if [ "$num" = "3" ]
 	then
@@ -12,5 +12,5 @@ do
 	else
 		echo "Holberton School"
 	fi
-	num=$(($num + 1))
-done;
+	num=$((num + 1))
+done

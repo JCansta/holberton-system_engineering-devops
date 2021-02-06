@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # This script is displaying "Holberton School" 10 times
-num="1"
-while [ $num -lt 21 ];
+num=1
+while [ $num -lt 21 ]
 do 
 	echo "$num"
 	case $num in
@@ -17,5 +17,5 @@ do
 			echo "bad luck from Italy"
 			;;
 	esac
-	num=$(($num + 1))
-done;
+	num=$((num + 1))
+done

@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 # This script is displaying "Holberton School" 10 times
-num="1"
-hour="0"
+num=1
+hour=0
 echo "Hour: 0"
-while [ $num -lt 60 ];
+while [ $num -lt 60 ]
 do
 	echo "$num"
-	num=$(($num + 1))
+	num=$((num + 1))
 	if [ "$num" = "60" ] && [ ! "$hour" = "12" ]
 	then
 		num="1"
-		hour=$(($hour + 1))
+		hour=$((hour + 1))
 		echo "Hour: $hour"
 	fi
-done;
+done
