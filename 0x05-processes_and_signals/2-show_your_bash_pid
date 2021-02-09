@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-#display especific lines of all process
+# process with only the bash word
 # shellcheck disable=SC2009
-ps -auxf | grep bash
+ps -auxf | grep 'bash'

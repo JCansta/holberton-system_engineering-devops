@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-#display especific lines of all process
+# display PID with the process name
 # shellcheck disable=SC2009
 pgrep -l bash

@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-#infinite process
-while true
+# display a phrase infinitly
+num=0
+while [ $num -lt 1 ]
 do
 	echo "To infinity and beyond"
 	sleep 2
