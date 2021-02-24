@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-#change port local 98
-
-nc -l 98
