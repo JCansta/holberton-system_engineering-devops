@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
-# This script redirect
+# This script redirect the page to another
 
 sudo apt update
 sudo apt install nginx -y
-echo 'Holberton School' | sudo tee /var/www/html/index.nginx-debian.html > /dev/null
-sudo sed -i "/listen 80 default_server;/ rewrite ^/$ http://www.facebook.com permanent" /etc/nginx/sites-available/default
+echo 'Holberton School' | sudo tee /var/www/html/index.nginx-debian.html
+sudo service nginx start
+new="\\\tlocation /redirect_me {\n\t\t return 301 https://www.youtube.com/watch?v=dQw4w9WgXcQ;\n\t}\n"
+sudo sed -i "30i $new" /etc/nginx/sites-available/default
 sudo service nginx restart
