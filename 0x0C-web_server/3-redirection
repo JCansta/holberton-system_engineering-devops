@@ -3,7 +3,6 @@
 
 sudo apt update
 sudo apt install nginx -y
-systemctl status nginx
 echo 'Holberton School' | sudo tee /var/www/html/index.nginx-debian.html > /dev/null
-sed -i "/listen 80 default_server/ rewrite ^/$ http://www.facebook.com permanent" /etc/nginx/sites-availables/default
+sudo sed -i "/listen 80 default_server;/ rewrite ^/$ http://www.facebook.com permanent" /etc/nginx/sites-available/default
 sudo service nginx restart
