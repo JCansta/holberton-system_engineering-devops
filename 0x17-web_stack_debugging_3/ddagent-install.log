@@ -1,0 +1,248 @@
+[34m
+* Datadog Agent install script v1.4.0
+[0m
+[34m
+* Installing apt-transport-https
+[0m
+Get:1 http://repo.mysql.com/apt/ubuntu trusty InRelease [33,3 kB]
+Get:2 http://security.ubuntu.com/ubuntu bionic-security InRelease [88,7 kB]
+Get:3 http://dl.google.com/linux/chrome/deb stable InRelease [1.811 B]
+Get:4 http://packages.microsoft.com/repos/vscode stable InRelease [3.959 B]
+Hit:5 http://ppa.launchpad.net/kelleyk/emacs/ubuntu bionic InRelease
+Hit:6 http://co.archive.ubuntu.com/ubuntu bionic InRelease
+Err:1 http://repo.mysql.com/apt/ubuntu trusty InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 8C718D3B5072E1F5
+Get:7 http://co.archive.ubuntu.com/ubuntu bionic-updates InRelease [88,7 kB]
+Get:8 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1.098 B]
+Hit:9 http://ppa.launchpad.net/obsproject/obs-studio/ubuntu bionic InRelease
+Get:10 http://packages.microsoft.com/repos/vscode stable/main amd64 Packages [242 kB]
+Get:11 http://security.ubuntu.com/ubuntu bionic-security/main i386 Packages [983 kB]
+Get:12 http://co.archive.ubuntu.com/ubuntu bionic-backports InRelease [74,6 kB]
+Get:13 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [1.726 kB]
+Get:14 http://co.archive.ubuntu.com/ubuntu bionic-updates/main i386 Packages [1.288 kB]
+Get:15 http://security.ubuntu.com/ubuntu bionic-security/main Translation-en [322 kB]
+Get:16 http://security.ubuntu.com/ubuntu bionic-security/main amd64 DEP-11 Metadata [48,5 kB]
+Get:17 http://security.ubuntu.com/ubuntu bionic-security/universe i386 Packages [982 kB]
+Get:18 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [1.126 kB]
+Get:19 http://security.ubuntu.com/ubuntu bionic-security/universe Translation-en [254 kB]
+Get:20 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 DEP-11 Metadata [60,4 kB]
+Get:21 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 DEP-11 Metadata [2.464 B]
+Get:22 http://co.archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [2.070 kB]
+Get:23 http://co.archive.ubuntu.com/ubuntu bionic-updates/main Translation-en [413 kB]
+Get:24 http://co.archive.ubuntu.com/ubuntu bionic-updates/main amd64 DEP-11 Metadata [294 kB]
+Get:25 http://co.archive.ubuntu.com/ubuntu bionic-updates/main DEP-11 48x48 Icons [78,3 kB]
+Get:26 http://co.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [1.735 kB]
+Get:27 http://co.archive.ubuntu.com/ubuntu bionic-updates/universe i386 Packages [1.567 kB]
+Get:28 http://co.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 DEP-11 Metadata [289 kB]
+Get:29 http://co.archive.ubuntu.com/ubuntu bionic-updates/universe DEP-11 48x48 Icons [217 kB]
+Get:30 http://co.archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 DEP-11 Metadata [2.468 B]
+Get:31 http://co.archive.ubuntu.com/ubuntu bionic-backports/universe amd64 DEP-11 Metadata [9.292 B]
+Reading package lists...
+W: GPG error: http://repo.mysql.com/apt/ubuntu trusty InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 8C718D3B5072E1F5
+E: The repository 'http://repo.mysql.com/apt/ubuntu trusty InRelease' is not signed.
+W: Target Packages (mysql-5.7-dmr/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:52 and /etc/apt/sources.list:53
+W: Target Packages (mysql-5.7-dmr/binary-i386/Packages) is configured multiple times in /etc/apt/sources.list:52 and /etc/apt/sources.list:53
+W: Target Packages (mysql-5.7-dmr/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:52 and /etc/apt/sources.list:53
+W: Target Translations (mysql-5.7-dmr/i18n/Translation-en_US) is configured multiple times in /etc/apt/sources.list:52 and /etc/apt/sources.list:53
+W: Target Translations (mysql-5.7-dmr/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:52 and /etc/apt/sources.list:53
+W: Target DEP-11 (mysql-5.7-dmr/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:52 and /etc/apt/sources.list:53
+W: Target DEP-11 (mysql-5.7-dmr/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:52 and /etc/apt/sources.list:53
+W: Target DEP-11-icons-small (mysql-5.7-dmr/dep11/icons-48x48.tar) is configured multiple times in /etc/apt/sources.list:52 and /etc/apt/sources.list:53
+W: Target DEP-11-icons (mysql-5.7-dmr/dep11/icons-64x64.tar) is configured multiple times in /etc/apt/sources.list:52 and /etc/apt/sources.list:53
+W: Target CNF (mysql-5.7-dmr/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:52 and /etc/apt/sources.list:53
+W: Target CNF (mysql-5.7-dmr/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:52 and /etc/apt/sources.list:53
+[31m'apt-get update' failed, the script will not install the latest version of apt-transport-https.[0m
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  gyp libegl1-mesa libjs-async libjs-inherits libjs-node-uuid libjs-underscore
+  libllvm9 libuv1-dev linux-hwe-5.4-headers-5.4.0-42
+  linux-hwe-5.4-headers-5.4.0-45 linux-hwe-5.4-headers-5.4.0-47
+  linux-hwe-5.4-headers-5.4.0-48 linux-hwe-5.4-headers-5.4.0-52
+  linux-hwe-5.4-headers-5.4.0-53 linux-hwe-5.4-headers-5.4.0-56
+  linux-hwe-5.4-headers-5.4.0-58 linux-hwe-5.4-headers-5.4.0-59
+  linux-hwe-5.4-headers-5.4.0-60 linux-hwe-5.4-headers-5.4.0-62
+  linux-hwe-5.4-headers-5.4.0-65 linux-hwe-5.4-headers-5.4.0-66
+  linux-hwe-5.4-headers-5.4.0-67 linux-hwe-5.4-headers-5.4.0-70
+  linux-hwe-5.4-headers-5.4.0-71 node-abbrev node-ansi node-ansi-color-table
+  node-archy node-async node-balanced-match node-block-stream
+  node-brace-expansion node-builtin-modules node-combined-stream
+  node-concat-map node-cookie-jar node-delayed-stream node-forever-agent
+  node-form-data node-fs.realpath node-fstream node-fstream-ignore
+  node-github-url-from-git node-glob node-graceful-fs node-hosted-git-info
+  node-inflight node-inherits node-ini node-is-builtin-module node-isexe
+  node-json-stringify-safe node-lockfile node-lru-cache node-mime
+  node-minimatch node-mkdirp node-mute-stream node-node-uuid node-nopt
+  node-normalize-package-data node-npmlog node-once node-osenv
+  node-path-is-absolute node-pseudomap node-qs node-read
+  node-read-package-json node-request node-retry node-rimraf node-semver
+  node-sha node-slide node-spdx-correct node-spdx-expression-parse
+  node-spdx-license-ids node-tar node-tunnel-agent node-underscore
+  node-validate-npm-package-license node-which node-wrappy node-yallist
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  apt-transport-https
+0 upgraded, 1 newly installed, 0 to remove and 72 not upgraded.
+Need to get 1.692 B of archives.
+After this operation, 154 kB of additional disk space will be used.
+Get:1 http://co.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 apt-transport-https all 1.6.13 [1.692 B]
+Fetched 1.692 B in 0s (10,5 kB/s)
+Selecting previously unselected package apt-transport-https.
+(Reading database ... dpkg: warning: files list file for package 'emacs25-common' missing; assuming package has no files currently installed
+(Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 514187 files and directories currently installed.)
+Preparing to unpack .../apt-transport-https_1.6.13_all.deb ...
+Unpacking apt-transport-https (1.6.13) ...
+Setting up apt-transport-https (1.6.13) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  gyp libegl1-mesa libjs-async libjs-inherits libjs-node-uuid libjs-underscore
+  libllvm9 libuv1-dev linux-hwe-5.4-headers-5.4.0-42
+  linux-hwe-5.4-headers-5.4.0-45 linux-hwe-5.4-headers-5.4.0-47
+  linux-hwe-5.4-headers-5.4.0-48 linux-hwe-5.4-headers-5.4.0-52
+  linux-hwe-5.4-headers-5.4.0-53 linux-hwe-5.4-headers-5.4.0-56
+  linux-hwe-5.4-headers-5.4.0-58 linux-hwe-5.4-headers-5.4.0-59
+  linux-hwe-5.4-headers-5.4.0-60 linux-hwe-5.4-headers-5.4.0-62
+  linux-hwe-5.4-headers-5.4.0-65 linux-hwe-5.4-headers-5.4.0-66
+  linux-hwe-5.4-headers-5.4.0-67 linux-hwe-5.4-headers-5.4.0-70
+  linux-hwe-5.4-headers-5.4.0-71 node-abbrev node-ansi node-ansi-color-table
+  node-archy node-async node-balanced-match node-block-stream
+  node-brace-expansion node-builtin-modules node-combined-stream
+  node-concat-map node-cookie-jar node-delayed-stream node-forever-agent
+  node-form-data node-fs.realpath node-fstream node-fstream-ignore
+  node-github-url-from-git node-glob node-graceful-fs node-hosted-git-info
+  node-inflight node-inherits node-ini node-is-builtin-module node-isexe
+  node-json-stringify-safe node-lockfile node-lru-cache node-mime
+  node-minimatch node-mkdirp node-mute-stream node-node-uuid node-nopt
+  node-normalize-package-data node-npmlog node-once node-osenv
+  node-path-is-absolute node-pseudomap node-qs node-read
+  node-read-package-json node-request node-retry node-rimraf node-semver
+  node-sha node-slide node-spdx-correct node-spdx-expression-parse
+  node-spdx-license-ids node-tar node-tunnel-agent node-underscore
+  node-validate-npm-package-license node-which node-wrappy node-yallist
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  gnupg gnupg-l10n gnupg-utils gpg gpg-agent gpg-wks-client gpg-wks-server
+  gpgconf gpgsm gpgv
+Suggested packages:
+  tor parcimonie xloadimage scdaemon
+The following packages will be upgraded:
+  dirmngr gnupg gnupg-l10n gnupg-utils gpg gpg-agent gpg-wks-client
+  gpg-wks-server gpgconf gpgsm gpgv
+11 upgraded, 0 newly installed, 0 to remove and 61 not upgraded.
+Need to get 2.150 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+Get:1 http://co.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gpg-wks-client amd64 2.2.4-1ubuntu1.4 [91,8 kB]
+Get:2 http://co.archive.ubuntu.com/ubuntu bionic-updates/main amd64 dirmngr amd64 2.2.4-1ubuntu1.4 [316 kB]
+Get:3 http://co.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gpg-wks-server amd64 2.2.4-1ubuntu1.4 [85,0 kB]
+Get:4 http://co.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gnupg-utils amd64 2.2.4-1ubuntu1.4 [128 kB]
+Get:5 http://co.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gpg-agent amd64 2.2.4-1ubuntu1.4 [227 kB]
+Get:6 http://co.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gpg amd64 2.2.4-1ubuntu1.4 [467 kB]
+Get:7 http://co.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gpgconf amd64 2.2.4-1ubuntu1.4 [123 kB]
+Get:8 http://co.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gnupg-l10n all 2.2.4-1ubuntu1.4 [49,8 kB]
+Get:9 http://co.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gnupg amd64 2.2.4-1ubuntu1.4 [249 kB]
+Get:10 http://co.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gpgsm amd64 2.2.4-1ubuntu1.4 [215 kB]
+Get:11 http://co.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gpgv amd64 2.2.4-1ubuntu1.4 [198 kB]
+Fetched 2.150 kB in 1s (2.417 kB/s)
+(Reading database ... dpkg: warning: files list file for package 'emacs25-common' missing; assuming package has no files currently installed
+(Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 514191 files and directories currently installed.)
+Preparing to unpack .../00-gpg-wks-client_2.2.4-1ubuntu1.4_amd64.deb ...
+Unpacking gpg-wks-client (2.2.4-1ubuntu1.4) over (2.2.4-1ubuntu1.3) ...
+Preparing to unpack .../01-dirmngr_2.2.4-1ubuntu1.4_amd64.deb ...
+Unpacking dirmngr (2.2.4-1ubuntu1.4) over (2.2.4-1ubuntu1.3) ...
+Preparing to unpack .../02-gpg-wks-server_2.2.4-1ubuntu1.4_amd64.deb ...
+Unpacking gpg-wks-server (2.2.4-1ubuntu1.4) over (2.2.4-1ubuntu1.3) ...
+Preparing to unpack .../03-gnupg-utils_2.2.4-1ubuntu1.4_amd64.deb ...
+Unpacking gnupg-utils (2.2.4-1ubuntu1.4) over (2.2.4-1ubuntu1.3) ...
+Preparing to unpack .../04-gpg-agent_2.2.4-1ubuntu1.4_amd64.deb ...
+Unpacking gpg-agent (2.2.4-1ubuntu1.4) over (2.2.4-1ubuntu1.3) ...
+Preparing to unpack .../05-gpg_2.2.4-1ubuntu1.4_amd64.deb ...
+Unpacking gpg (2.2.4-1ubuntu1.4) over (2.2.4-1ubuntu1.3) ...
+Preparing to unpack .../06-gpgconf_2.2.4-1ubuntu1.4_amd64.deb ...
+Unpacking gpgconf (2.2.4-1ubuntu1.4) over (2.2.4-1ubuntu1.3) ...
+Preparing to unpack .../07-gnupg-l10n_2.2.4-1ubuntu1.4_all.deb ...
+Unpacking gnupg-l10n (2.2.4-1ubuntu1.4) over (2.2.4-1ubuntu1.3) ...
+Preparing to unpack .../08-gnupg_2.2.4-1ubuntu1.4_amd64.deb ...
+Unpacking gnupg (2.2.4-1ubuntu1.4) over (2.2.4-1ubuntu1.3) ...
+Preparing to unpack .../09-gpgsm_2.2.4-1ubuntu1.4_amd64.deb ...
+Unpacking gpgsm (2.2.4-1ubuntu1.4) over (2.2.4-1ubuntu1.3) ...
+Preparing to unpack .../10-gpgv_2.2.4-1ubuntu1.4_amd64.deb ...
+Unpacking gpgv (2.2.4-1ubuntu1.4) over (2.2.4-1ubuntu1.3) ...
+Setting up gpgv (2.2.4-1ubuntu1.4) ...
+Setting up gpgconf (2.2.4-1ubuntu1.4) ...
+Setting up gpg-agent (2.2.4-1ubuntu1.4) ...
+Setting up gnupg-l10n (2.2.4-1ubuntu1.4) ...
+Setting up gpgsm (2.2.4-1ubuntu1.4) ...
+Setting up gnupg-utils (2.2.4-1ubuntu1.4) ...
+Setting up dirmngr (2.2.4-1ubuntu1.4) ...
+Setting up gpg (2.2.4-1ubuntu1.4) ...
+Setting up gpg-wks-server (2.2.4-1ubuntu1.4) ...
+Setting up gpg-wks-client (2.2.4-1ubuntu1.4) ...
+Setting up gnupg (2.2.4-1ubuntu1.4) ...
+Processing triggers for install-info (6.5.0.dfsg.1-2) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+[34m
+* Installing APT package sources for Datadog
+[0m
+Warning: apt-key output should not be parsed (stdout is not a terminal)
+Executing: /tmp/apt-key-gpghome.lffteHQ1l7/gpg.1.sh --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 A2923DFF56EDA6E76E55E492D3A80E30382E94DE
+gpg: key D3A80E30382E94DE: public key "Datadog, Inc <package@datadoghq.com>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+Warning: apt-key output should not be parsed (stdout is not a terminal)
+Executing: /tmp/apt-key-gpghome.3SUmrF9TOY/gpg.1.sh --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 D75CEA17048B9ACBF186794B32637D44F14F620E
+gpg: key 32637D44F14F620E: public key "Datadog, Inc. Master key (2020-09-08) <package+masterkey@datadoghq.com>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+[34m
+* Installing the Datadog Agent package
+[0m
+Ign:1 https://apt.datadoghq.com stable InRelease
+Get:2 https://apt.datadoghq.com stable Release [8.324 B]
+Get:3 https://apt.datadoghq.com stable Release.gpg [819 B]
+Get:4 https://apt.datadoghq.com stable/7 amd64 Packages [10,4 kB]
+Fetched 19,6 kB in 2s (8.741 B/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  gyp libegl1-mesa libjs-async libjs-inherits libjs-node-uuid libjs-underscore
+  libllvm9 libuv1-dev linux-hwe-5.4-headers-5.4.0-42
+  linux-hwe-5.4-headers-5.4.0-45 linux-hwe-5.4-headers-5.4.0-47
+  linux-hwe-5.4-headers-5.4.0-48 linux-hwe-5.4-headers-5.4.0-52
+  linux-hwe-5.4-headers-5.4.0-53 linux-hwe-5.4-headers-5.4.0-56
+  linux-hwe-5.4-headers-5.4.0-58 linux-hwe-5.4-headers-5.4.0-59
+  linux-hwe-5.4-headers-5.4.0-60 linux-hwe-5.4-headers-5.4.0-62
+  linux-hwe-5.4-headers-5.4.0-65 linux-hwe-5.4-headers-5.4.0-66
+  linux-hwe-5.4-headers-5.4.0-67 linux-hwe-5.4-headers-5.4.0-70
+  linux-hwe-5.4-headers-5.4.0-71 node-abbrev node-ansi node-ansi-color-table
+  node-archy node-async node-balanced-match node-block-stream
+  node-brace-expansion node-builtin-modules node-combined-stream
+  node-concat-map node-cookie-jar node-delayed-stream node-forever-agent
+  node-form-data node-fs.realpath node-fstream node-fstream-ignore
+  node-github-url-from-git node-glob node-graceful-fs node-hosted-git-info
+  node-inflight node-inherits node-ini node-is-builtin-module node-isexe
+  node-json-stringify-safe node-lockfile node-lru-cache node-mime
+  node-minimatch node-mkdirp node-mute-stream node-node-uuid node-nopt
+  node-normalize-package-data node-npmlog node-once node-osenv
+  node-path-is-absolute node-pseudomap node-qs node-read
+  node-read-package-json node-request node-retry node-rimraf node-semver
+  node-sha node-slide node-spdx-correct node-spdx-expression-parse
+  node-spdx-license-ids node-tar node-tunnel-agent node-underscore
+  node-validate-npm-package-license node-which node-wrappy node-yallist
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  datadog-agent
+0 upgraded, 1 newly installed, 0 to remove and 61 not upgraded.
+Need to get 228 MB of archives.
+After this operation, 732 MB of additional disk space will be used.
+Get:1 https://apt.datadoghq.com stable/7 amd64 datadog-agent amd64 1:7.27.0-1 [228 MB]
+Fetched 228 MB in 16s (14,2 MB/s)
+Selecting previously unselected package datadog-agent.
+(Reading database ... dpkg: warning: files list file for package 'emacs25-common' missing; assuming package has no files currently installed
+(Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 514191 files and directories currently installed.)
+Preparing to unpack .../datadog-agent_1%3a7.27.0-1_amd64.deb ...
+Unpacking datadog-agent (1:7.27.0-1) ...
